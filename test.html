@@ -1,0 +1,76 @@
+<!doctype html>
+<html ng-app="store">
+<head>
+<meta charset="utf-8">
+<title>Jquery</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.footer-links ul {
+	display: none
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="footer-links">
+      <h5>Link 1</h5>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Link 1</h5>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Link 1</h5>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Link 1</h5>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+$(document).ready(function(){
+   
+  $('.footer-links').click(function(){
+    $(this).siblings().children('ul').slideUp();
+	$(this).children('ul').slideToggle()
+	
+	
+  })
+})
+
+</script>
+</html>

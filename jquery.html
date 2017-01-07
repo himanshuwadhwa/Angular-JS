@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Angular</title>
+<style type="text/css">
+body{margin:0; padding:0;}
+.a { background-color: red;}
+.b {  background-color: aqua; }
+.c {  background-color: blue; }
+.features{float:left; width:33.3%; }
+</style>
+</head>
+
+<body >
+<div class="features a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus magna egestas augue tincidunt, sed placerat elit aliquet. Duis sapien orci, scelerisque feugiat lobortis ac, aliquet eu augue. Suspendisse ornare diam maximus nunc porta porta. Cras pretium est quis rutrum vulputate. Mauris quis ornare sapien. Maecenas vitae tincidunt nunc, ac accumsan nunc. Vivamus at diam nec odio condimentum cursus. Cras in condimentum libero. </div>
+<div class="features b">Nullam semper neque leo, ac sagittis turpis maximus et. Donec nisl metus, faucibus et eros at, vestibulum porta metus. Aenean finibus elit id nulla placerat volutpat. Sed viverra dictum nulla ut fringilla. Donec vehicula, libero quis dignissim venenatis, diam arcu ultrices neque, vitae vulputate purus sem cursus lorem. In hac habitasse platea dictumst. Nam et magna elit. Pellentesque elementum, nisl pharetra laoreet dictum, mi turpis eleifend risus, non finibus tortor tellus id nisl. Etiam quis sapien vitae lectus semper pellentesque at vitae velit. Nullam sit amet auctor odio. Aenean dapibus nibh et molestie egestas. Curabitur non dolor porta, blandit lacus non, facilisis urna. Nunc eu dignissim dolor. Donec ipsum elit, lacinia ut convallis eget, dictum at urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla at arcu lectus. </div>
+<div class="features c"> Mauris elit metus, pretium vitae ornare sed, ultrices at lectus. Quisque augue lectus, pharetra quis ornare a, commodo eget eros. Praesent ante sem, interdum vitae cursus eu, blandit eget lectus. Nam non nunc sapien. Mauris massa nisl, consectetur vel velit eget, volutpat cursus orci. Curabitur tincidunt orci tempus cursus luctus. Vestibulum viverra vestibulum nunc vel convallis. Sed lobortis sollicitudin aliquam. Cras volutpat odio et sapien placerat, eget malesuada est rutrum. Duis congue iaculis fermentum. Duis pulvinar mi ac risus porta, non aliquam dui vehicula. Curabitur facilisis ligula a felis mollis aliquet. Vestibulum erat augue, laoreet vitae scelerisque at, dapibus eu est.
+<br>
+<br>
+
+In at orci eu quam pretium consectetur. Pellentesque at auctor nulla, consequat lobortis nibh. Aliquam eget velit iaculis risus vestibulum malesuada varius id augue. Sed bibendum sit amet lectus a malesuada.</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+$(window).on('load resize', function(){
+	$('.features').height("auto");
+	var maxHeight = -1;
+	$('.features').each(function(){
+		maxHeight= maxHeight > $(this).height() ? 100 : 600;
+		
+	})
+	$('.features').height(maxHeight);
+});
+</script>
+
+</html>
